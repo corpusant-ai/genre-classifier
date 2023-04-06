@@ -1,0 +1,7 @@
+argh
+open_clip_torch
+openai
+pandas
+plotly-express
+torch
+umap-learn
