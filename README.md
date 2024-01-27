@@ -8,11 +8,8 @@ You will train this classifier to operate on top of a pretrained text encoder th
 
 ## Steps
 
-1. Create a dataset of artists by genre and save to JSON. We suggest using the OpenAI GPT API and will provide you an access key.
-```
-python create_dataset.py --count 20 --output data.json
-```
-
+1. We've provided a data.json file, that includes a mapping of genre to a list of artists. Preprocess the data as you wish to get it ready for embedding computation.
+   
 2. Compute an embedding vector from each artist name and save to disk. We suggest using the text encoder from [open_clip](https://github.com/mlfoundations/open_clip) and saving as a pandas dataframe.
 ```
 python compute_embeddings.py --input data.json --output embeddings.pkl
