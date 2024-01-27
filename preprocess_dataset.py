@@ -12,16 +12,15 @@ GENRES = [
 ]
 
 
-def create_dataset(
+def preprocess_dataset(
     *,
-    count_per_genre: int = 20,
-    output: str = "data.json",
+    input: str = "data.json",
 ) -> None:
     """
-    Create a dataset of artist names per genre and save to a JSON file.
+    Preprocess / clean up the raw data
     """
     print("✨🔧 Implement me! 🔧✨")
 
 
 if __name__ == "__main__":
-    argh.dispatch_command(create_dataset)
+    argh.dispatch_command(preprocess_dataset)
