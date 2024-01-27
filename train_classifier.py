@@ -1,6 +1,6 @@
 import argh
 
-from create_dataset import GENRES
+from preprocess_dataset import GENRES
 
 
 def train_classifier(
