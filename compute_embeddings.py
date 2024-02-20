@@ -3,8 +3,8 @@ import argh
 
 def compute_embeddings(
     *,
-    input_file: str,
-    output_file: str = "embeddings.pkl",
+    input: str,
+    output: str = "embeddings.pkl",
 ) -> None:
     """
     Given a JSON of artists per genre, compute an embedding vector
