@@ -4,7 +4,7 @@ Train a classifier that accepts the name of a musician and predicts the most lik
 
 `{ jazz, opera, country, electronic, metal, rap, classical, reggae }`
 
-You will train this classifier to operate on top of a pretrained text encoder that converts artist names into embedding vectors. In support of this task, you will assemble a small dataset of artist names for each genre using GPT.
+You will train this classifier to operate on top of a pretrained text encoder that converts artist names into embedding vectors. 
 
 ## Steps
 
