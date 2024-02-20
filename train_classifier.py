@@ -5,7 +5,7 @@ from preprocess_dataset import GENRES
 
 def train_classifier(
     *,
-    input_file: str,
+    input: str,
     seed: int = 42,
 ) -> None:
     """
