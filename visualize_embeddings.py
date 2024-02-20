@@ -7,7 +7,7 @@ import umap
 
 def visualize_embeddings(
     *,
-    input_file: str,
+    input: str,
     seed: int = 42,
 ) -> None:
     """
@@ -17,7 +17,7 @@ def visualize_embeddings(
         - genre: Labeled genre of the artist
         - features: Embedding vector of the artist's name
     """
-    df = pd.read_pickle(input_file)
+    df = pd.read_pickle(input)
     embeddings = np.array(df["features"].values.tolist())  # (batch, embed_dim)
     coords = umap.UMAP(random_state=seed).fit_transform(embeddings)  # (batch, 2)
 
