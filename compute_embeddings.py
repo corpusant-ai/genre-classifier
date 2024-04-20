@@ -8,9 +8,13 @@ def compute_embeddings(
 ) -> None:
     """
     Given a JSON of artists per genre, compute an embedding vector
-    for each artist's name, and save a dataframe containing the
-    artist name, genre, and embedding vector.
+    for each artist's name, and save a dataframe with the following columns:
+
+    - artist: the artist's name
+    - genre: the artist's genre
+    - features: the embedding vector (numpy) of the artist's name
     """
+
     print("✨🔧 Implement me! 🔧✨")
 
 
